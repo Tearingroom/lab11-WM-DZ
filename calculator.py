@@ -36,19 +36,14 @@ def mul(a,b):
     return a*b
 
 def div(a, b):
-    try:
-        result = b / a
-        return result
-    except ZeroDivisionError:
-        print("Error: Division by zero is not allowed.")
-        return None
+    if b == 0:
+        raise ZeroDivisionError("Division by zero")
+    return a / b
 
 def log(a, b):
-    try:
-        result = math.log(b, a)
-        return result
-    except ValueError:
-        print("Error: log() arguments must be positive and base cannot be 1.")
-        return None
+    if b <= 0 or a <= 0 or a == 1:
+        raise ValueError("Invalid log arguments")
+    return math.log(b, a)
+
 def exp(a,b):
     return (a**b)
