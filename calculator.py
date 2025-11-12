@@ -1,16 +1,4 @@
-"""
-calculator.py
-- Defines functions used to create a simple calculator
-
-One function per operation, in order.
-"""
-
-"""
-calculator.py
-- Defines functions used to create a simple calculator
-
-One function per operation, in order.
-"""
+#https://github.com/Tearingroom/lab11-WM-DZ
 import math
 def square_root(a):
     try:
